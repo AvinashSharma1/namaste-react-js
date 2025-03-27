@@ -40,3 +40,4 @@ coverage/
 
 # Cache files
 .cache/
+.parcel-cache/
