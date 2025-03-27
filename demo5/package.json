@@ -1,0 +1,28 @@
+{
+  "name": "namaste-reactjs",
+  "version": "1.0.0",
+  "description": "This is first namaste react js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvinashSharma1/namaste-react-js.git"
+  },
+  "keywords": [
+    "Reactjs"
+  ],
+  "author": "react",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AvinashSharma1/namaste-react-js/issues"
+  },
+  "homepage": "https://github.com/AvinashSharma1/namaste-react-js#readme",
+  "devDependencies": {
+    "parcel": "^2.14.2"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
