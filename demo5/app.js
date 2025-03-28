@@ -1,64 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-const example_1_prefix = "example_1";
-const example_2_prefix = "example_2";
-const example_3_prefix = "example_3";
+// React Element
+const titleElement = (
+    <h1 id="heading" tabIndex="6">
+        Hello, Namaste React!, Title Element
+    </h1>
+)
 
-const example_1_parent = React.createElement(
-    'div', 
-    {id: example_1_prefix + "_parent"},
-    React.createElement(
-        'div',
-        {id: example_1_prefix + "_child"},
-        React.createElement('h1', null, 'Hello World! Namaste React!')
-    )
-);
+// React functional component
 
-const example_2_parent = React.createElement(
-    'div', 
-    {id: example_2_prefix + "_parent"},
-    React.createElement(
-        'div',
-        {id: example_2_prefix + "_child"},
-        [
-            React.createElement('h1', null, 'Hello World! Namaste React!'), 
-            React.createElement('h1', null, 'React Awesome!')
-        ]
-    )
-);
+const TittleComponent = () => <h1 id="Title"> Namaste React Title !!</h1>
 
+const HeadingComponent = () => {
+    return <h1 className="heading">Namaste React Functional Commponent</h1>
+}
 
-const example_3_parent = React.createElement(
-    'div', 
-    {id: example_3_prefix + "_parent"},
-    [
-        React.createElement(
-            'div',
-            {id: example_3_prefix + "_child1"},
-            [
-                React.createElement('h1', null, 'Hello World! Namaste React!'), 
-                React.createElement('h1', null, 'React Awesome!')
-            ]
-        ),
-        React.createElement(
-            'div',
-            {id: example_3_prefix + "_child2"},
-            [
-                React.createElement('h1', null, 'Hello World! Namaste React!'), 
-                React.createElement('h1', null, 'React Awesome!')
-            ]
-        )
-    ]
-);
+const data = alert('Hello, Namaste React!')
+// Component Composition
+const HeadingComponent2 = () => (
+    <div>
+        {data}
+        {titleElement}
+        <TittleComponent />
+        <h1 className="heading">Namaste React Functional Commponent</h1>
+    </div>
+)
 
-console.log(parent);
-
-//const heading = React.createElement('h1', {id:"heading",xyz:"abc"}, 'Hello World! Namaste React!');
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
-//root.render(example_1_parent);
-//root.render(example_2_parent);
-
-root.render(example_3_parent);
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<HeadingComponent2 />)
