@@ -63,3 +63,26 @@ module.exports = {
 ## Component
 
 -   Functional Component - a normal javascript function return piece of some react element or jsx code
+
+## Props
+
+-   prop is a object.
+-   when need to pass dynamic data to in component for that use props.
+-   Passing propes to the component same as function arguments.
+-
+
+## Config driven UI
+
+## Food App
+
+-   npm install -d parcel
+-   npm i react@18 react-dom@18
+
+## Two type of Export / Import
+
+-   ### Default Export/Import
+    -   export default component
+    -   import component from "path"
+-   ### Named Export/Import
+    -   export const Component
+    -   import {Component} from "path"
