@@ -86,3 +86,14 @@ module.exports = {
 -   ### Named Export/Import
     -   export const Component
     -   import {Component} from "path"
+
+# React Hooks
+
+(Normal JS utility function)
+
+-   useState() - Ste
+-   useEffect()
+
+whever states variable updated/changes react render component
+
+## Reconciliation Algorithm-> React Fiber
