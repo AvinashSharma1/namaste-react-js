@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 125px;
+    height: 75px;
+}
+
+.nav-items {
+    padding: 0x 20px;
+}
+
+.nav-items > ul {
+    display: flex;
+}
+.nav-items > ul > li {
+    list-style-type: none;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.search-container {
+    padding: 10px;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.res-card {
+    height: 400px;
+    width: 220px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.res-card:hover {
+    cursor: pointer;
+    border: 1px solid #000;
+    box-shadow: grey 0px 0px 5px;
+}
+
+.res-logo {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+.res-card > h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.image-container {
+    position: relative; /* Enables absolute positioning inside */
+    width: 100%;
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 2px solid white; /* Adds contrast */
+}
+
+.veg {
+    background-color: green;
+    text-transform: capitalize;
+    font-size: 8pt;
+}
+.non-veg {
+    background-color: maroon;
+    font-size: 8pt;
+}
+
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;
+}

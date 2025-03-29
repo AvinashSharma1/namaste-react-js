@@ -1,0 +1,25 @@
+{
+    "name": "namaste-food-app",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AvinashSharma1/namaste-react-js.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AvinashSharma1/namaste-react-js/issues"
+    },
+    "homepage": "https://github.com/AvinashSharma1/namaste-react-js#readme",
+    "dependencies": {
+        "parcel": "^2.14.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    }
+}
