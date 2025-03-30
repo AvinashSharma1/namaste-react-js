@@ -82,6 +82,36 @@
 }
 
 .filter-btn {
-    margin: 10px;
     cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.shimmer-card {
+    height: 400px;
+    width: 220px;
+    margin: 10px;
+    padding: 5px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 20px;
+}
+
+@keyframes shimme-card {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.filter-container {
+    display: flex;
 }
