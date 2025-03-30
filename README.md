@@ -77,6 +77,7 @@ module.exports = {
 
 -   npm install -d parcel
 -   npm i react@18 react-dom@18
+-   for CORS issue resolve install chrome extension
 
 ## Two type of Export / Import
 
@@ -91,9 +92,13 @@ module.exports = {
 
 (Normal JS utility function)
 
--   useState() - Ste
+-   useState() -
+    -   It's return 2 things, first is variable name, second is setVariableName
+    -   whever states variable updated/changes react render component
 -   useEffect()
-
-whever states variable updated/changes react render component
+    -   it accepting 2 arugements, first is callback function and second is dependancy.
+    -   this callback function call when, render cycle finish or component render done.
 
 ## Reconciliation Algorithm-> React Fiber
+
+-   whenever state variable update , react trigres a reconciliation cycle (re-renders the component)
