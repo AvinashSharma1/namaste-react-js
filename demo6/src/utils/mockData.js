@@ -1,1528 +1,1621 @@
 const resList = {
-    cards: [
+    restaurants: [
         {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '408671',
-                        name: 'Element3',
-                        cloudinaryImageId: 'o0brtvhvt8szi4omcrws',
-                        locality: 'Whitefield',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹600 for two',
-                        cuisines: [
-                            'North Indian',
-                            'Chinese',
-                            'Continental',
-                            'Jain',
-                            'Desserts',
-                        ],
-                        avgRating: 4.4,
-                        veg: true,
-                        parentId: '245235',
-                        avgRatingString: '4.4',
-                        totalRatingsString: '871',
-                        sla: {
-                            deliveryTime: 44,
-                            lastMileTravel: 2.8,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '40-45 mins',
-                            lastMileTravelString: '2.8 km',
-                            iconType: 'ICON_TYPE_EMPTY',
+            info: {
+                id: '634166',
+                name: 'Burger King',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2025/3/24/a521ea0e-e327-47e1-8ec1-52598de8d725_634166.jpg',
+                locality: 'Nexus Whitefield Mall',
+                areaName: 'Whitefield',
+                costForTwo: '₹350 for two',
+                cuisines: ['Burgers', 'American'],
+                avgRating: 4.2,
+                parentId: '166',
+                avgRatingString: '4.2',
+                totalRatingsString: '11K+',
+                sla: {
+                    deliveryTime: 29,
+                    lastMileTravel: 1.4,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '25-30 mins',
+                    lastMileTravelString: '1.4 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 04:00:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '60% OFF',
+                    subHeader: 'UPTO ₹120',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/burger-king-nexus-mall-whitefield-rest634166',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '573190',
+                name: 'Olio - The Wood Fired Pizzeria',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2025/1/26/6d682221-6e57-4673-ae8b-75b384380ca2_573190.jpg',
+                locality: 'Varthur Main Road',
+                areaName: 'Whitefield',
+                costForTwo: '₹300 for two',
+                cuisines: [
+                    'Pizzas',
+                    'Pastas',
+                    'Italian',
+                    'Fast Food',
+                    'Snacks',
+                    'Beverages',
+                    'Desserts',
+                ],
+                avgRating: 4.3,
+                parentId: '11633',
+                avgRatingString: '4.3',
+                totalRatingsString: '2.8K+',
+                sla: {
+                    deliveryTime: 27,
+                    lastMileTravel: 1.7,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '25-30 mins',
+                    lastMileTravelString: '1.7 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 06:00:00',
+                    opened: true,
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: 'bolt/bolt%206.png',
+                            description: 'bolt!',
                         },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:00:00',
-                            opened: true,
+                        {
+                            imageId: 'newg.png',
+                            description: 'Gourmet',
                         },
-                        badges: {
-                            imageBadges: [
+                    ],
+                },
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
                                 {
-                                    imageId:
-                                        'v1695133679/badges/Pure_Veg111.png',
-                                    description: 'pureveg',
+                                    attributes: {
+                                        description: 'bolt!',
+                                        imageId: 'bolt/bolt%206.png',
+                                    },
+                                },
+                                {
+                                    attributes: {
+                                        description: 'Gourmet',
+                                        imageId: 'newg.png',
+                                    },
                                 },
                             ],
                         },
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                imageBased: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                imageId:
-                                                    'v1695133679/badges/Pure_Veg111.png',
-                                                description: 'pureveg',
-                                            },
-                                        },
-                                    ],
-                                },
-                                textExtendedBadges: {},
-                                textBased: {},
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: '10% OFF',
-                            subHeader: 'UPTO ₹40',
-                            logoCtx: {
-                                text: 'BENEFITS',
-                            },
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '4.4',
-                                ratingCount: '379',
-                            },
-                            source: 'GOOGLE',
-                            sourceIconImageId:
-                                'v1704440323/google_ratings/rating_google_tag',
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+                        textBased: {},
+                        textExtendedBadges: {},
                     },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=408671&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹99',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
                     },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
                 },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/olio-the-wood-fired-pizzeria-varthur-main-road-whitefield-rest573190',
+                type: 'WEBLINK',
             },
         },
         {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '673436',
-                        name: 'Kitchen County',
-                        cloudinaryImageId: '283455b07061ad9db8f84f92e22dd756',
-                        locality: 'Whitefield',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹600 for two',
-                        cuisines: ['Chinese', 'North Indian', 'Tandoor'],
-                        avgRating: 4.3,
-                        parentId: '119044',
-                        avgRatingString: '4.3',
-                        totalRatingsString: '917',
-                        sla: {
-                            deliveryTime: 24,
-                            lastMileTravel: 3.9,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '20-25 mins',
-                            lastMileTravelString: '3.9 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:59:00',
-                            opened: true,
-                        },
-                        badges: {},
-                        isOpen: true,
-                        aggregatedDiscountInfoV2: {},
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {},
-                                textExtendedBadges: {},
-                            },
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '4.4',
-                                ratingCount: '362',
-                            },
-                            source: 'GOOGLE',
-                            sourceIconImageId:
-                                'v1704440323/google_ratings/rating_google_tag',
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=673436&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
+            info: {
+                id: '376697',
+                name: 'Big Bowl',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2024/6/22/deff0d02-ca1d-4ef9-9d62-b0cbeabf33d3_376697.JPG',
+                locality: 'Thubarahalli',
+                areaName: 'Whitefield',
+                costForTwo: '₹250 for two',
+                cuisines: ['North Indian', 'Chinese', 'Tibetan', 'Desserts'],
+                avgRating: 4.2,
+                parentId: '434792',
+                avgRatingString: '4.2',
+                totalRatingsString: '2.1K+',
+                sla: {
+                    deliveryTime: 30,
+                    lastMileTravel: 3.7,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '25-30 mins',
+                    lastMileTravelString: '3.7 km',
+                    iconType: 'ICON_TYPE_EMPTY',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                availability: {
+                    nextCloseTime: '2025-03-30 03:00:00',
+                    opened: true,
                 },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹129',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/big-bowl-thubarahalli-whitefield-rest376697',
+                type: 'WEBLINK',
             },
         },
         {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '338091',
-                        name: 'Gharoyana',
-                        cloudinaryImageId: 'rh74wcf9u9i7h5uqktsl',
-                        locality: 'KADUGODI',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹300 for two',
-                        cuisines: [
-                            'North Indian',
-                            'Bengali',
-                            'Chinese',
-                            'Snacks',
-                        ],
-                        avgRating: 4.2,
-                        parentId: '87231',
-                        avgRatingString: '4.2',
-                        totalRatingsString: '1.1K+',
-                        sla: {
-                            deliveryTime: 38,
-                            lastMileTravel: 4,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '35-40 mins',
-                            lastMileTravelString: '4.0 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:00:00',
-                            opened: true,
-                        },
-                        badges: {},
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {},
-                                textExtendedBadges: {},
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: 'ITEMS',
-                            subHeader: 'AT ₹99',
-                            logoCtx: {
-                                text: 'BENEFITS',
-                            },
-                            footerText: '50 DEALS LEFT',
-                            secondaryHeaderType:
-                                'SECONDARY_HEADER_TYPE_USAGE_LIMIT_OFFER',
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=338091&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
+            info: {
+                id: '28608',
+                name: 'Imperio Restaurant',
+                cloudinaryImageId: 'a1629b9c7f59577a55411e94425c6d99',
+                locality: 'Gunjur',
+                areaName: 'Whitefield',
+                costForTwo: '₹500 for two',
+                cuisines: [
+                    'Biryani',
+                    'Kebabs',
+                    'South Indian',
+                    'Tandoor',
+                    'Beverages',
+                    'Desserts',
+                    'Ice Cream',
+                ],
+                avgRating: 4.1,
+                parentId: '5610',
+                avgRatingString: '4.1',
+                totalRatingsString: '51K+',
+                sla: {
+                    deliveryTime: 17,
+                    lastMileTravel: 0.4,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '15-20 mins',
+                    lastMileTravelString: '0.4 km',
+                    iconType: 'ICON_TYPE_EMPTY',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                availability: {
+                    nextCloseTime: '2025-03-30 01:00:00',
+                    opened: true,
                 },
-            },
-        },
-        {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '765689',
-                        name: "Nikki's Kitchen",
-                        cloudinaryImageId: '7f697cada2011f109dffc5745b992ea5',
-                        locality: 'BEML Layout',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹300 for two',
-                        cuisines: ['Gujarati', 'North Indian'],
-                        avgRating: 4.2,
-                        veg: true,
-                        parentId: '148944',
-                        avgRatingString: '4.2',
-                        totalRatingsString: '1.5K+',
-                        sla: {
-                            deliveryTime: 48,
-                            lastMileTravel: 3.9,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '45-50 mins',
-                            lastMileTravelString: '3.9 km',
-                            iconType: 'ICON_TYPE_EMPTY',
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: 'bolt/bolt%206.png',
+                            description: 'bolt!',
                         },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:00:00',
-                            opened: true,
+                    ],
+                    textExtendedBadges: [
+                        {
+                            iconId: 'guiltfree/GF_Logo_android_3x',
+                            shortDescription: 'options available',
+                            fontColor: '#7E808C',
                         },
-                        badges: {
-                            imageBadges: [
+                    ],
+                },
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
                                 {
-                                    imageId:
-                                        'v1695133679/badges/Pure_Veg111.png',
-                                    description: 'pureveg',
+                                    attributes: {
+                                        description: 'bolt!',
+                                        imageId: 'bolt/bolt%206.png',
+                                    },
                                 },
                             ],
                         },
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                imageId:
-                                                    'v1695133679/badges/Pure_Veg111.png',
-                                                description: 'pureveg',
-                                            },
-                                        },
-                                    ],
-                                },
-                                textExtendedBadges: {},
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: '10% OFF',
-                            subHeader: 'UPTO ₹35',
-                            logoCtx: {
-                                text: 'BENEFITS',
-                            },
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=765689&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
-                },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
-                },
-            },
-        },
-        {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '262167',
-                        name: 'Hotel Empire',
-                        cloudinaryImageId: 'weuqdjwzk3azoijehnel',
-                        locality: 'Brookefields',
-                        areaName: 'Brookefield',
-                        costForTwo: '₹400 for two',
-                        cuisines: ['Kebabs', 'Biryani'],
-                        avgRating: 4.3,
-                        parentId: '475',
-                        avgRatingString: '4.3',
-                        totalRatingsString: '32K+',
-                        sla: {
-                            deliveryTime: 48,
-                            lastMileTravel: 5,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '45-50 mins',
-                            lastMileTravelString: '5.0 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:59:00',
-                            opened: true,
-                        },
-                        badges: {},
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {},
-                                textExtendedBadges: {},
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: 'ITEMS',
-                            subHeader: 'AT ₹79',
-                            logoCtx: {
-                                text: 'BENEFITS',
-                            },
-                            footerText: '2 DEALS LEFT',
-                            secondaryHeaderType:
-                                'SECONDARY_HEADER_TYPE_USAGE_LIMIT_OFFER',
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '4.4',
-                                ratingCount: '24K+',
-                            },
-                            source: 'GOOGLE',
-                            sourceIconImageId:
-                                'v1704440323/google_ratings/rating_google_tag',
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=262167&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
-                },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
-                },
-            },
-        },
-        {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '750224',
-                        name: 'Daily Kitchen - Homely Meals',
-                        cloudinaryImageId:
-                            'RX_THUMBNAIL/IMAGES/VENDOR/2024/5/19/4ec6a5b6-7c8d-4e10-b8a3-317922e419da_750224.JPG',
-                        locality: 'Opp.Post Office',
-                        areaName: 'Kadugodi',
-                        costForTwo: '₹250 for two',
-                        cuisines: [
-                            'Home Food',
-                            'Indian',
-                            'North Indian',
-                            'Thalis',
-                        ],
-                        avgRating: 4.6,
-                        parentId: '444382',
-                        avgRatingString: '4.6',
-                        totalRatingsString: '770',
-                        sla: {
-                            deliveryTime: 15,
-                            lastMileTravel: 0.9,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '10-20 mins',
-                            lastMileTravelString: '0.9 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-30 02:00:00',
-                            opened: true,
-                        },
-                        badges: {
-                            imageBadges: [
+                        textBased: {},
+                        textExtendedBadges: {
+                            badgeObject: [
                                 {
-                                    imageId: 'bolt/bolt%206.png',
-                                    description: 'bolt!',
-                                },
-                            ],
-                            textExtendedBadges: [
-                                {
-                                    iconId: 'guiltfree/GF_Logo_android_3x',
-                                    shortDescription: 'options available',
-                                    fontColor: '#7E808C',
+                                    attributes: {
+                                        description: '',
+                                        fontColor: '#7E808C',
+                                        iconId: 'guiltfree/GF_Logo_android_3x',
+                                        shortDescription: 'options available',
+                                    },
                                 },
                             ],
                         },
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                description: 'bolt!',
-                                                imageId: 'bolt/bolt%206.png',
-                                            },
-                                        },
-                                    ],
-                                },
-                                textExtendedBadges: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                shortDescription:
-                                                    'options available',
-                                                fontColor: '#7E808C',
-                                                iconId: 'guiltfree/GF_Logo_android_3x',
-                                                description: '',
-                                            },
-                                        },
-                                    ],
-                                },
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: 'ITEMS',
-                            subHeader: 'AT ₹100',
-                            footerText: '5 DEALS LEFT',
-                            secondaryHeaderType:
-                                'SECONDARY_HEADER_TYPE_USAGE_LIMIT_OFFER',
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
                     },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=750224&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹49',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
                     },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '4.0',
+                        ratingCount: '7.7K+',
+                    },
+                    source: 'GOOGLE',
+                    sourceIconImageId:
+                        'v1704440323/google_ratings/rating_google_tag',
                 },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/imperio-restaurant-gunjur-whitefield-rest28608',
+                type: 'WEBLINK',
             },
         },
         {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '616191',
-                        name: 'Bhatti Chicken - Grilled, NOT Fried!',
-                        cloudinaryImageId:
-                            'RX_THUMBNAIL/IMAGES/VENDOR/2024/5/20/b4dfbc1e-d38c-46ce-af34-43e5e8c7e511_616191.JPG',
-                        locality: 'Opp.Post Office',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹250 for two',
-                        cuisines: [
-                            'North Indian',
-                            'Snacks',
-                            'Fast Food',
-                            'Tandoor',
-                        ],
-                        avgRating: 4.5,
-                        parentId: '355286',
-                        avgRatingString: '4.5',
-                        totalRatingsString: '140',
-                        sla: {
-                            deliveryTime: 25,
-                            lastMileTravel: 0.9,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '20-30 mins',
-                            lastMileTravelString: '0.9 km',
-                            iconType: 'ICON_TYPE_EMPTY',
+            info: {
+                id: '372897',
+                name: 'Pizza Hut',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2024/7/17/43d3693b-904d-441a-8f0a-81dc5f88f0b6_372897.jpg',
+                locality: 'Ramangondanhalli',
+                areaName: 'Whitefield',
+                costForTwo: '₹300 for two',
+                cuisines: ['Pizzas'],
+                avgRating: 4.2,
+                parentId: '721',
+                avgRatingString: '4.2',
+                totalRatingsString: '6.4K+',
+                sla: {
+                    deliveryTime: 22,
+                    lastMileTravel: 2,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '20-25 mins',
+                    lastMileTravelString: '2.0 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 02:00:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '50% OFF',
+                    subHeader: 'UPTO ₹100',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '4.6',
+                        ratingCount: '1.3K+',
+                    },
+                    source: 'GOOGLE',
+                    sourceIconImageId:
+                        'v1704440323/google_ratings/rating_google_tag',
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/pizza-hut-ramangondanhalli-whitefield-rest372897',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '707063',
+                name: 'KFC',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/ace6a25d-9b54-4fa7-a30e-5cd311acde3a_707063.JPG',
+                locality: 'Ramagondanahalli',
+                areaName: 'Varthur',
+                costForTwo: '₹400 for two',
+                cuisines: ['Burgers', 'Fast Food', 'Rolls & Wraps'],
+                avgRating: 4.2,
+                parentId: '547',
+                avgRatingString: '4.2',
+                totalRatingsString: '3.3K+',
+                sla: {
+                    deliveryTime: 16,
+                    lastMileTravel: 2.1,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '15-20 mins',
+                    lastMileTravelString: '2.1 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 01:00:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹59',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/kfc-ramagondanahalli-varthur-rest707063',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '813369',
+                name: "La Pino'z Pizza",
+                cloudinaryImageId: 'e5f54df4ed8bac458b801ede76ee37d0',
+                locality: 'Whitefield',
+                areaName: 'Upkar Layout',
+                costForTwo: '₹250 for two',
+                cuisines: [
+                    'Pizzas',
+                    'Pastas',
+                    'Italian',
+                    'Desserts',
+                    'Beverages',
+                ],
+                avgRating: 4.2,
+                parentId: '4961',
+                avgRatingString: '4.2',
+                totalRatingsString: '1.3K+',
+                sla: {
+                    deliveryTime: 20,
+                    lastMileTravel: 2.7,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '20-25 mins',
+                    lastMileTravelString: '2.7 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 03:00:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '40% OFF',
+                    subHeader: 'UPTO ₹80',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/la-pinoz-pizza-whitefield-upkar-layout-rest813369',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '23686',
+                name: "McDonald's",
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2025/3/20/0513e895-27e9-400c-9f24-2018241e0fa1_23686.jpg',
+                locality: 'Forum Neighbourhood Mall',
+                areaName: 'Whitefield',
+                costForTwo: '₹400 for two',
+                cuisines: ['Burgers', 'Beverages', 'Cafe', 'Desserts'],
+                avgRating: 4.4,
+                parentId: '630',
+                avgRatingString: '4.4',
+                totalRatingsString: '34K+',
+                sla: {
+                    deliveryTime: 19,
+                    lastMileTravel: 1.4,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '15-20 mins',
+                    lastMileTravelString: '1.4 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 03:45:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '₹80 OFF',
+                    subHeader: 'ABOVE ₹349',
+                    discountTag: 'FLAT DEAL',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/mcdonalds-forum-neighbourhood-mall-whitefield-rest23686',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '354307',
+                name: 'Brik Oven - Original Sourdough Pizzas',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2024/5/21/78f5c7b0-7648-4c2b-9d91-466d1c77faf9_354307.jpg',
+                locality: 'Whitefield',
+                areaName: 'Whitefield',
+                costForTwo: '₹700 for two',
+                cuisines: ['Italian', 'Pizzas', 'Desserts', 'Beverages'],
+                avgRating: 4.1,
+                parentId: '488952',
+                avgRatingString: '4.1',
+                totalRatingsString: '4.3K+',
+                sla: {
+                    deliveryTime: 25,
+                    lastMileTravel: 4,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '20-25 mins',
+                    lastMileTravelString: '4.0 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 02:00:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '₹125 OFF',
+                    subHeader: 'ABOVE ₹799',
+                    discountTag: 'FLAT DEAL',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '4.4',
+                        ratingCount: '1.7K+',
+                    },
+                    source: 'GOOGLE',
+                    sourceIconImageId:
+                        'v1704440323/google_ratings/rating_google_tag',
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/brik-oven-original-sourdough-pizzas-whitefield-rest354307',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '442026',
+                name: 'Keventers Ice Cream',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2025/3/20/e05838ac-0c22-491d-bcb1-05387720d0bf_442026.jpg',
+                locality: 'Thubarahalli',
+                areaName: 'Whitefield',
+                costForTwo: '₹200 for two',
+                cuisines: ['Ice Cream', 'Desserts'],
+                avgRating: 4.2,
+                veg: true,
+                parentId: '272044',
+                avgRatingString: '4.2',
+                totalRatingsString: '566',
+                sla: {
+                    deliveryTime: 30,
+                    lastMileTravel: 4,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '25-30 mins',
+                    lastMileTravelString: '4.0 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 04:00:00',
+                    opened: true,
+                },
+                badges: {
+                    textExtendedBadges: [
+                        {
+                            iconId: 'guiltfree/GF_Logo_android_3x',
+                            shortDescription: 'options available',
+                            fontColor: '#7E808C',
                         },
-                        availability: {
-                            nextCloseTime: '2025-03-30 02:00:00',
-                            opened: true,
-                        },
-                        badges: {
-                            textExtendedBadges: [
+                    ],
+                },
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {
+                            badgeObject: [
                                 {
-                                    iconId: 'guiltfree/GF_Logo_android_3x',
-                                    shortDescription: 'options available',
-                                    fontColor: '#7E808C',
+                                    attributes: {
+                                        description: '',
+                                        fontColor: '#7E808C',
+                                        iconId: 'guiltfree/GF_Logo_android_3x',
+                                        shortDescription: 'options available',
+                                    },
                                 },
                             ],
                         },
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                imageBased: {},
-                                textExtendedBadges: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                iconId: 'guiltfree/GF_Logo_android_3x',
-                                                description: '',
-                                                shortDescription:
-                                                    'options available',
-                                                fontColor: '#7E808C',
-                                            },
-                                        },
-                                    ],
-                                },
-                                textBased: {},
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: 'ITEMS',
-                            subHeader: 'AT ₹145',
-                            footerText: '5 DEALS LEFT',
-                            secondaryHeaderType:
-                                'SECONDARY_HEADER_TYPE_USAGE_LIMIT_OFFER',
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
                     },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=616191&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹69',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
                     },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
                 },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/keventers-ice-cream-thubarahalli-whitefield-rest442026',
+                type: 'WEBLINK',
             },
         },
         {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '801165',
-                        name: 'Makhani Darbar',
-                        cloudinaryImageId:
-                            'RX_THUMBNAIL/IMAGES/VENDOR/2024/12/20/3c536bf0-0e7e-444e-9015-4b6a908131ff_801165.JPG',
-                        locality: 'WHITEFIELD 2',
-                        areaName: 'HAGDUR  ROAD',
-                        costForTwo: '₹500 for two',
-                        cuisines: [
-                            'Kebabs',
-                            'Mughlai',
-                            'Beverages',
-                            'Desserts',
-                        ],
-                        avgRating: 4.1,
-                        parentId: '478595',
-                        avgRatingString: '4.1',
-                        totalRatingsString: '39',
-                        sla: {
-                            deliveryTime: 33,
-                            lastMileTravel: 0.3,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '30-35 mins',
-                            lastMileTravelString: '0.3 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:59:00',
-                            opened: true,
-                        },
-                        badges: {},
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {},
-                                textExtendedBadges: {},
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: '₹125 OFF',
-                            subHeader: 'ABOVE ₹399',
-                            discountTag: 'FLAT DEAL',
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=801165&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
+            info: {
+                id: '312661',
+                name: 'Samosa Party',
+                cloudinaryImageId: 'jds3xuwzylo5vpfdnziv',
+                locality: 'Whitefield',
+                areaName: 'Whitefield',
+                costForTwo: '₹150 for two',
+                cuisines: [
+                    'Fast Food',
+                    'Snacks',
+                    'Beverages',
+                    'Chaat',
+                    'North Indian',
+                    'Street Food',
+                    'Sweets',
+                    'Desserts',
+                    'Punjabi',
+                    'Bakery',
+                ],
+                avgRating: 4.4,
+                parentId: '6364',
+                avgRatingString: '4.4',
+                totalRatingsString: '9.8K+',
+                sla: {
+                    deliveryTime: 22,
+                    lastMileTravel: 3.7,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '20-25 mins',
+                    lastMileTravelString: '3.7 km',
+                    iconType: 'ICON_TYPE_EMPTY',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                availability: {
+                    nextCloseTime: '2025-03-30 00:30:00',
+                    opened: true,
                 },
-            },
-        },
-        {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '384059',
-                        name: "AB's - Absolute Barbecues",
-                        cloudinaryImageId: 'l7zkm50rfqiw3vnk7xte',
-                        locality: 'Whitefield',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹500 for two',
-                        cuisines: [
-                            'North Indian',
-                            'Barbecue',
-                            'Kebabs',
-                            'Biryani',
-                        ],
-                        avgRating: 4.1,
-                        parentId: '387759',
-                        avgRatingString: '4.1',
-                        totalRatingsString: '1.6K+',
-                        sla: {
-                            deliveryTime: 32,
-                            lastMileTravel: 4,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '30-35 mins',
-                            lastMileTravelString: '4.0 km',
-                            iconType: 'ICON_TYPE_EMPTY',
+                badges: {
+                    textExtendedBadges: [
+                        {
+                            iconId: 'guiltfree/GF_Logo_android_3x',
+                            shortDescription: 'options available',
+                            fontColor: '#7E808C',
                         },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:00:00',
-                            opened: true,
-                        },
-                        badges: {},
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textExtendedBadges: {},
-                                textBased: {},
-                                imageBased: {},
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: 'ITEMS',
-                            subHeader: 'AT ₹39',
-                            footerText: '1 DEALS LEFT',
-                            secondaryHeaderType:
-                                'SECONDARY_HEADER_TYPE_USAGE_LIMIT_OFFER',
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '4.2',
-                                ratingCount: '16K+',
-                            },
-                            source: 'GOOGLE',
-                            sourceIconImageId:
-                                'v1704440323/google_ratings/rating_google_tag',
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=384059&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
+                    ],
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
-                },
-            },
-        },
-        {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '1003833',
-                        name: 'Good Bite',
-                        cloudinaryImageId:
-                            'RX_THUMBNAIL/IMAGES/VENDOR/2024/12/6/cfb96610-3cc1-4218-975a-1b7177fb63d2_1003833.jpg',
-                        locality: 'Csi Church',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹200 for two',
-                        cuisines: ['Juices'],
-                        avgRating: 3.9,
-                        parentId: '246226',
-                        avgRatingString: '3.9',
-                        totalRatingsString: '4',
-                        sla: {
-                            deliveryTime: 33,
-                            lastMileTravel: 1.4,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '30-35 mins',
-                            lastMileTravelString: '1.4 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-29 22:00:00',
-                            opened: true,
-                        },
-                        badges: {
-                            imageBadges: [
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {
+                            badgeObject: [
                                 {
-                                    imageId: 'bolt/bolt%206.png',
-                                    description: 'bolt!',
+                                    attributes: {
+                                        description: '',
+                                        fontColor: '#7E808C',
+                                        iconId: 'guiltfree/GF_Logo_android_3x',
+                                        shortDescription: 'options available',
+                                    },
                                 },
                             ],
                         },
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textExtendedBadges: {},
-                                textBased: {},
-                                imageBased: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                imageId: 'bolt/bolt%206.png',
-                                                description: 'bolt!',
-                                            },
-                                        },
-                                    ],
-                                },
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: '15% OFF',
-                            subHeader: 'UPTO ₹45',
-                            logoCtx: {
-                                text: 'BENEFITS',
-                            },
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        isNewlyOnboarded: true,
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
                     },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=1003833&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹199',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
                     },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '3.5',
+                        ratingCount: '53',
+                    },
+                    source: 'GOOGLE',
+                    sourceIconImageId:
+                        'v1704440323/google_ratings/rating_google_tag',
                 },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/samosa-party-whitefield-rest312661',
+                type: 'WEBLINK',
             },
         },
         {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '427430',
-                        name: 'Wall Street Shack',
-                        cloudinaryImageId: 't5snqrpc9crtqjzdbmcz',
-                        locality: 'Gandhipuram',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹250 for two',
-                        cuisines: ['Fast Food', 'Snacks'],
-                        avgRating: 4.1,
-                        parentId: '237874',
-                        avgRatingString: '4.1',
-                        totalRatingsString: '160',
-                        sla: {
-                            deliveryTime: 36,
-                            lastMileTravel: 1.4,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '35-40 mins',
-                            lastMileTravelString: '1.4 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:00:00',
-                            opened: true,
-                        },
-                        badges: {},
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                imageBased: {},
-                                textExtendedBadges: {},
-                                textBased: {},
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: '₹150 OFF',
-                            subHeader: 'ABOVE ₹999',
-                            discountTag: 'FLAT DEAL',
-                            logoCtx: {
-                                text: 'BENEFITS',
-                            },
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=427430&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
+            info: {
+                id: '66107',
+                name: 'Art Of Delight - Crafted Ice Creams And Desserts',
+                cloudinaryImageId: 'crxxcmnaxftmxu9xht0a',
+                locality: 'Bellandur Gate Road',
+                areaName: 'Bellandur',
+                costForTwo: '₹300 for two',
+                cuisines: ['Desserts', 'Ice Cream', 'Beverages'],
+                avgRating: 4.7,
+                parentId: '562339',
+                avgRatingString: '4.7',
+                totalRatingsString: '9.8K+',
+                sla: {
+                    deliveryTime: 32,
+                    lastMileTravel: 10.2,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '30-35 mins',
+                    lastMileTravelString: '10.2 km',
+                    iconType: 'ICON_TYPE_EMPTY',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                availability: {
+                    nextCloseTime: '2025-03-30 02:15:00',
+                    opened: true,
                 },
-            },
-        },
-        {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '392',
-                        name: 'Suryawanshi',
-                        cloudinaryImageId: 'p46avra6hko5rayxsbzv',
-                        locality: 'Whitefield',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹450 for two',
-                        cuisines: [
-                            'Maharashtrian',
-                            'Thalis',
-                            'Seafood',
-                            'Desserts',
-                            'Beverages',
-                        ],
-                        avgRating: 4.4,
-                        parentId: '198035',
-                        avgRatingString: '4.4',
-                        totalRatingsString: '8.0K+',
-                        sla: {
-                            deliveryTime: 37,
-                            lastMileTravel: 4,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '35-40 mins',
-                            lastMileTravelString: '4.0 km',
-                            iconType: 'ICON_TYPE_EMPTY',
+                badges: {
+                    textExtendedBadges: [
+                        {
+                            iconId: 'Ratnesh_Badges/test2.png',
+                            shortDescription: 'Perfect ice cream delivery',
+                            fontColor: '#7E808C',
                         },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:00:00',
-                            opened: true,
-                        },
-                        badges: {},
-                        isOpen: true,
-                        aggregatedDiscountInfoV2: {},
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textExtendedBadges: {},
-                                textBased: {},
-                                imageBased: {},
-                            },
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '3.9',
-                                ratingCount: '3.1K+',
-                            },
-                            source: 'GOOGLE',
-                            sourceIconImageId:
-                                'v1704440323/google_ratings/rating_google_tag',
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=392&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
+                    ],
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
-                },
-            },
-        },
-        {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '34768',
-                        name: 'Angaar Biryani',
-                        cloudinaryImageId: 'qztfu7okixjezx8jj3cb',
-                        locality: 'Whitefield',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹300 for two',
-                        cuisines: [
-                            'Beverages',
-                            'Biryani',
-                            'Chinese',
-                            'Mughlai',
-                            'North Indian',
-                            'Seafood',
-                        ],
-                        avgRating: 4.3,
-                        parentId: '9077',
-                        avgRatingString: '4.3',
-                        totalRatingsString: '7.2K+',
-                        sla: {
-                            deliveryTime: 29,
-                            lastMileTravel: 4,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '25-30 mins',
-                            lastMileTravelString: '4.0 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-30 00:00:00',
-                            opened: true,
-                        },
-                        badges: {},
-                        isOpen: true,
-                        aggregatedDiscountInfoV2: {},
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {},
-                                textExtendedBadges: {},
-                            },
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '4.1',
-                                ratingCount: '439',
-                            },
-                            source: 'GOOGLE',
-                            sourceIconImageId:
-                                'v1704440323/google_ratings/rating_google_tag',
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-                    },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=34768&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
-                    },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
-                },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
-                },
-            },
-        },
-        {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '558768',
-                        name: 'HRX by EatFit',
-                        cloudinaryImageId:
-                            'RX_THUMBNAIL/IMAGES/VENDOR/2025/3/5/9990c202-e24d-4683-9b9c-40dc9c25dffb_558768.jpg',
-                        locality: 'Ramagondanahalli',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹450 for two',
-                        cuisines: ['Healthy Food', 'Salads', 'Burgers'],
-                        avgRating: 4.3,
-                        parentId: '335529',
-                        avgRatingString: '4.3',
-                        totalRatingsString: '589',
-                        sla: {
-                            deliveryTime: 22,
-                            lastMileTravel: 1.7,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '20-25 mins',
-                            lastMileTravelString: '1.7 km',
-                            iconType: 'ICON_TYPE_EMPTY',
-                        },
-                        availability: {
-                            nextCloseTime: '2025-03-30 01:00:00',
-                            opened: true,
-                        },
-                        badges: {
-                            imageBadges: [
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {
+                            badgeObject: [
                                 {
-                                    imageId: 'bolt/bolt%206.png',
-                                    description: 'bolt!',
-                                },
-                            ],
-                            textExtendedBadges: [
-                                {
-                                    iconId: 'guiltfree/GF_Logo_android_3x',
-                                    shortDescription: 'brand',
-                                    fontColor: '#7E808C',
+                                    attributes: {
+                                        description: '',
+                                        fontColor: '#7E808C',
+                                        iconId: 'Ratnesh_Badges/test2.png',
+                                        shortDescription:
+                                            'Perfect ice cream delivery',
+                                    },
                                 },
                             ],
                         },
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                description: 'bolt!',
-                                                imageId: 'bolt/bolt%206.png',
-                                            },
-                                        },
-                                    ],
-                                },
-                                textExtendedBadges: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                description: '',
-                                                shortDescription: 'brand',
-                                                fontColor: '#7E808C',
-                                                iconId: 'guiltfree/GF_Logo_android_3x',
-                                            },
-                                        },
-                                    ],
-                                },
-                            },
-                        },
-                        aggregatedDiscountInfoV3: {
-                            header: 'ITEMS',
-                            subHeader: 'AT ₹129',
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
                     },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=558768&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '30% OFF',
+                    subHeader: 'UPTO ₹75',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
                     },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
                 },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/art-of-delight-crafted-ice-creams-and-desserts-gate-road-bellandur-rest66107',
+                type: 'WEBLINK',
             },
         },
         {
-            card: {
-                card: {
-                    '@type':
-                        'type.googleapis.com/swiggy.presentation.food.v2.Restaurant',
-                    info: {
-                        id: '116962',
-                        name: 'Amaravathi Biryani Zone',
-                        cloudinaryImageId: 'pb0bdpcvj8ykdoqsr1dl',
-                        locality: 'Ambedkar Nagar',
-                        areaName: 'Whitefield',
-                        costForTwo: '₹350 for two',
-                        cuisines: ['Indian', 'Chinese'],
-                        avgRating: 3.7,
-                        parentId: '31001',
-                        avgRatingString: '3.7',
-                        totalRatingsString: '346',
-                        sla: {
-                            deliveryTime: 34,
-                            lastMileTravel: 1.9,
-                            serviceability: 'SERVICEABLE',
-                            slaString: '30-35 mins',
-                            lastMileTravelString: '1.9 km',
-                            iconType: 'ICON_TYPE_EMPTY',
+            info: {
+                id: '568721',
+                name: 'Baking Bad - Pizza Delivery',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2024/10/23/31e81ca1-e9bd-4e12-9e76-daecc58e4c95_568721.JPG',
+                locality: 'Whitefield',
+                areaName: 'Whitefield',
+                costForTwo: '₹650 for two',
+                cuisines: [
+                    'Pizzas',
+                    'Pastas',
+                    'Italian',
+                    'Fast Food',
+                    'Desserts',
+                    'Beverages',
+                ],
+                avgRating: 4.1,
+                parentId: '521053',
+                avgRatingString: '4.1',
+                totalRatingsString: '2.1K+',
+                sla: {
+                    deliveryTime: 22,
+                    lastMileTravel: 2.6,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '20-25 mins',
+                    lastMileTravelString: '2.6 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 04:00:00',
+                    opened: true,
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: 'newg.png',
+                            description: 'Gourmet',
                         },
-                        availability: {
-                            nextCloseTime: '2025-03-29 23:59:00',
-                            opened: true,
-                        },
-                        badges: {
-                            imageBadges: [
+                    ],
+                },
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
                                 {
-                                    imageId: 'bolt/bolt%206.png',
-                                    description: 'bolt!',
+                                    attributes: {
+                                        description: 'Gourmet',
+                                        imageId: 'newg.png',
+                                    },
                                 },
                             ],
                         },
-                        isOpen: true,
-                        type: 'F',
-                        badgesV2: {
-                            entityBadges: {
-                                textBased: {},
-                                imageBased: {
-                                    badgeObject: [
-                                        {
-                                            attributes: {
-                                                imageId: 'bolt/bolt%206.png',
-                                                description: 'bolt!',
-                                            },
-                                        },
-                                    ],
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹98',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '2.6',
+                        ratingCount: '20',
+                    },
+                    source: 'GOOGLE',
+                    sourceIconImageId:
+                        'v1704440323/google_ratings/rating_google_tag',
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/baking-bad-pizza-delivery-whitefield-rest568721',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '542012',
+                name: 'Burgerama',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2025/2/5/380bdfce-748e-470a-a355-2916630fbd91_542012.jpg',
+                locality: 'Siddapura Village',
+                areaName: 'Whitefield',
+                costForTwo: '₹600 for two',
+                cuisines: ['Burgers', 'Beverages', 'Fast Food'],
+                avgRating: 4.2,
+                parentId: '8993',
+                avgRatingString: '4.2',
+                totalRatingsString: '3.9K+',
+                sla: {
+                    deliveryTime: 25,
+                    lastMileTravel: 3,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '25-30 mins',
+                    lastMileTravelString: '3.0 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 04:00:00',
+                    opened: true,
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: 'newg.png',
+                            description: 'Gourmet',
+                        },
+                    ],
+                },
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: 'Gourmet',
+                                        imageId: 'newg.png',
+                                    },
                                 },
-                                textExtendedBadges: {},
-                            },
+                            ],
                         },
-                        aggregatedDiscountInfoV3: {
-                            header: '20% OFF',
-                            subHeader: 'UPTO ₹50',
-                            logoCtx: {
-                                text: 'BENEFITS',
-                            },
-                        },
-                        orderabilityCommunication: {
-                            title: {},
-                            subTitle: {},
-                            message: {},
-                            customIcon: {},
-                            commsStyling: {},
-                        },
-                        differentiatedUi: {
-                            displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                            differentiatedUiMediaDetails: {
-                                mediaType: 'ADS_MEDIA_ENUM_IMAGE',
-                                lottie: {},
-                                video: {},
-                            },
-                        },
-                        reviewsSummary: {},
-                        displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-                        restaurantOfferPresentationInfo: {},
-                        externalRatings: {
-                            aggregatedRating: {
-                                rating: '--',
-                            },
-                        },
-                        ratingsDisplayPreference:
-                            'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+                        textBased: {},
+                        textExtendedBadges: {},
                     },
-                    analytics: {},
-                    cta: {
-                        link: 'swiggy://menu?restaurant_id=116962&source=collection&query=North%20Indian',
-                        text: 'RESTAURANT_MENU',
-                        type: 'DEEPLINK',
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '60% OFF',
+                    subHeader: 'UPTO ₹120',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
                     },
-                    widgetId:
-                        'collectionV5RestaurantListWidget_SimRestoRelevance_food',
                 },
-                relevance: {
-                    type: 'RELEVANCE_TYPE_ON_MENU_RETURN',
-                    sectionId: 'MENU_RETURN_FOOD',
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '3.9',
+                        ratingCount: '149',
+                    },
+                    source: 'GOOGLE',
+                    sourceIconImageId:
+                        'v1704440323/google_ratings/rating_google_tag',
                 },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/burgerama-siddapura-village-whitefield-rest542012',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '357347',
+                name: 'Subway',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2025/1/21/0adc24f4-43d4-4d62-b12b-2067f8012dde_357347.JPG',
+                locality: 'Thubarahalli',
+                areaName: 'Whitefield',
+                costForTwo: '₹350 for two',
+                cuisines: ['sandwich', 'Salads', 'wrap', 'Healthy Food'],
+                avgRating: 3.8,
+                parentId: '2',
+                avgRatingString: '3.8',
+                totalRatingsString: '3.6K+',
+                sla: {
+                    deliveryTime: 28,
+                    lastMileTravel: 3.7,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '25-30 mins',
+                    lastMileTravelString: '3.7 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 03:00:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '40% OFF',
+                    subHeader: 'UPTO ₹80',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/subway-thubarahalli-whitefield-rest357347',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '763074',
+                name: 'Boba Bhai',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2024/11/7/1067629b-1f41-48b9-8c1a-8bfed1cc0482_763074.jpg',
+                locality: 'WHITEFIELD ROAD',
+                areaName: 'Prestige Shantiniketan Tech Park',
+                costForTwo: '₹200 for two',
+                cuisines: [
+                    'Bubble Tea',
+                    'Burger',
+                    'Korean',
+                    'Beverages',
+                    'Fast Food',
+                    'Juice and shake',
+                ],
+                avgRating: 4.2,
+                parentId: '361235',
+                avgRatingString: '4.2',
+                totalRatingsString: '592',
+                sla: {
+                    deliveryTime: 32,
+                    lastMileTravel: 4.8,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '30-35 mins',
+                    lastMileTravelString: '4.8 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-04-05 00:00:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹59',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/boba-bhai-whitefield-road-prestige-shantiniketan-tech-park-rest763074',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '506323',
+                name: 'Louis Burger',
+                cloudinaryImageId: '19d3d352cc815b9d88b22617b41fa97b',
+                locality: 'Siddapura',
+                areaName: 'Whitefield',
+                costForTwo: '₹600 for two',
+                cuisines: ['Burgers', 'American', 'Fast Food'],
+                avgRating: 4.2,
+                parentId: '22485',
+                avgRatingString: '4.2',
+                totalRatingsString: '5.7K+',
+                sla: {
+                    deliveryTime: 27,
+                    lastMileTravel: 3,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '25-30 mins',
+                    lastMileTravelString: '3.0 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 04:00:00',
+                    opened: true,
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: 'newg.png',
+                            description: 'Gourmet',
+                        },
+                    ],
+                },
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: 'Gourmet',
+                                        imageId: 'newg.png',
+                                    },
+                                },
+                            ],
+                        },
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '50% OFF',
+                    subHeader: 'UPTO ₹100',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/louis-burger-siddapura-whitefield-rest506323',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '853142',
+                name: 'ITC Sunfeast Baked Creations',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2025/3/17/168fb844-79e0-4138-95e9-e3cf2044b50e_853142.jpg',
+                locality: 'Whitefield Main Road',
+                areaName: 'Pattandur, Agrahara',
+                costForTwo: '₹600 for two',
+                cuisines: ['Bakery', 'Desserts', 'Sweets'],
+                avgRating: 4.5,
+                parentId: '12285',
+                avgRatingString: '4.5',
+                totalRatingsString: '507',
+                sla: {
+                    deliveryTime: 15,
+                    lastMileTravel: 1.9,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '10-15 mins',
+                    lastMileTravelString: '1.9 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 02:00:00',
+                    opened: true,
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: 'bolt/bolt%206.png',
+                            description: 'bolt!',
+                        },
+                        {
+                            imageId: 'newg.png',
+                            description: 'Gourmet',
+                        },
+                    ],
+                },
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: 'bolt!',
+                                        imageId: 'bolt/bolt%206.png',
+                                    },
+                                },
+                                {
+                                    attributes: {
+                                        description: 'Gourmet',
+                                        imageId: 'newg.png',
+                                    },
+                                },
+                            ],
+                        },
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: '₹125 OFF',
+                    subHeader: 'ABOVE ₹249',
+                    discountTag: 'FLAT DEAL',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/itc-sunfeast-baked-creations-whitefield-main-road-pattandur-agrahara-rest853142',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '853141',
+                name: 'ITC Master Chef Creations',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2025/3/17/3cb31810-b777-4e37-ab0d-1fd388ee05d2_853141.jpg',
+                locality: 'Whitefield Main Road',
+                areaName: 'Pattandur, Agrahara',
+                costForTwo: '₹650 for two',
+                cuisines: ['North Indian', 'Biryani', 'Kebabs', 'rolls'],
+                avgRating: 4.4,
+                parentId: '11992',
+                avgRatingString: '4.4',
+                totalRatingsString: '783',
+                sla: {
+                    deliveryTime: 21,
+                    lastMileTravel: 1.9,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '20-25 mins',
+                    lastMileTravelString: '1.9 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 02:00:00',
+                    opened: true,
+                },
+                badges: {},
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹149',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/itc-master-chef-creations-whitefield-main-road-pattandur-agrahara-rest853141',
+                type: 'WEBLINK',
+            },
+        },
+        {
+            info: {
+                id: '450668',
+                name: 'Ghee and Turmeric',
+                cloudinaryImageId:
+                    'RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/ad1693f9-cf80-497c-93ef-591f53937ce1_450668.JPG',
+                locality: 'Thubarahalli',
+                areaName: 'Whitefield',
+                costForTwo: '₹250 for two',
+                cuisines: [
+                    'Biryani',
+                    'Tandoor',
+                    'Punjabi',
+                    'Beverages',
+                    'Desserts',
+                    'Mughlai',
+                ],
+                avgRating: 4.3,
+                parentId: '261287',
+                avgRatingString: '4.3',
+                totalRatingsString: '1.1K+',
+                sla: {
+                    deliveryTime: 22,
+                    lastMileTravel: 3.7,
+                    serviceability: 'SERVICEABLE',
+                    slaString: '20-25 mins',
+                    lastMileTravelString: '3.7 km',
+                    iconType: 'ICON_TYPE_EMPTY',
+                },
+                availability: {
+                    nextCloseTime: '2025-03-30 01:00:00',
+                    opened: true,
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: 'newg.png',
+                            description: 'Gourmet',
+                        },
+                        {
+                            imageId: 'v1695133679/badges/Pure_Veg111.png',
+                            description: 'pureveg',
+                        },
+                    ],
+                },
+                isOpen: true,
+                type: 'F',
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: 'Gourmet',
+                                        imageId: 'newg.png',
+                                    },
+                                },
+                                {
+                                    attributes: {
+                                        description: 'pureveg',
+                                        imageId:
+                                            'v1695133679/badges/Pure_Veg111.png',
+                                    },
+                                },
+                            ],
+                        },
+                        textBased: {},
+                        textExtendedBadges: {},
+                    },
+                },
+                aggregatedDiscountInfoV3: {
+                    header: 'ITEMS',
+                    subHeader: 'AT ₹180',
+                },
+                differentiatedUi: {
+                    displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                    differentiatedUiMediaDetails: {
+                        lottie: {},
+                        video: {},
+                    },
+                },
+                reviewsSummary: {},
+                displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+                restaurantOfferPresentationInfo: {},
+                externalRatings: {
+                    aggregatedRating: {
+                        rating: '--',
+                    },
+                },
+                ratingsDisplayPreference:
+                    'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+            },
+            analytics: {
+                context: 'seo-data-ba1b51f8-ebc7-411a-972c-58bf0464f270',
+            },
+            cta: {
+                link: 'https://www.swiggy.com/city/bangalore/ghee-and-turmeric-thubarahalli-whitefield-rest450668',
+                type: 'WEBLINK',
             },
         },
     ],
 }
-
 export default resList
