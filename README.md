@@ -113,3 +113,8 @@ module.exports = {
 -   npm i react-router-dom -> it will latest and current is 7.4.1 so instead of this use
 -   npm install react-router-dom@6
 -   useRouteError hooks
+
+# 2 types Routing in web
+
+-   Client side routing
+-   Server side routing
