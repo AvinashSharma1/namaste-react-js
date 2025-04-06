@@ -103,6 +103,8 @@ module.exports = {
     -   If no dependancy array array => useEffect is called on every render.
     -   If dependacny array is empty = [] => useEffect is called only initial render (just once).
     -   If dependacny array is [stateVaribaleName] => It's only called everytime stateVariable is updated
+-   useParams
+    use for get resId (path)
 
 ## Reconciliation Algorithm-> React Fiber
 
