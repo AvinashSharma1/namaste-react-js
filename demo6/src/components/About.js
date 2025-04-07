@@ -1,3 +1,5 @@
+import User from './User'
+import UserClass from './UserClass'
 const About = () => {
     return (
         <div className="about">
@@ -11,6 +13,11 @@ const About = () => {
                 If you have any questions, feel free to reach out to us. We are
                 here to help!
             </p>
+            <User name="Avinash (Functional)" />
+            <UserClass
+                name="Avinash (Class)"
+                location="Bangalore (Class based)"
+            />
         </div>
     )
 }

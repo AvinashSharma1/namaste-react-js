@@ -120,3 +120,18 @@ module.exports = {
 
 -   Client side routing
 -   Server side routing
+
+# Class Based Component
+
+-   In Constructor only set props and super props as well state
+-   class based component have render method
+
+```
+  constructor(props) {
+    // Required to initialize 'this.props'
+    super(props);
+    this.state = {
+      // Component state initialization
+    };
+  }
+```
