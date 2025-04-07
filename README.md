@@ -125,8 +125,11 @@ module.exports = {
 
 -   In Constructor only set props and super props as well state
 -   class based component have render method
+-   React components are based on ES6 classes, and when you create a class-based component, you're inheriting from `React.Component`. The `super` keyword is used to call the constructor of the parent class (in this case, `React.Component`) to initialize the component's state and lifecycle methods.
+-   Calling `super(props)` ensures that the props are properly passed to the `React.Component` constructor. If you don’t pass `props` to `super()`, the `this.props` will be undefined in your component. This can lead to bugs when trying to access the `props` in the component.
 
 ```
+class MyComponent extends React.Component {
   constructor(props) {
     // Required to initialize 'this.props'
     super(props);
@@ -134,4 +137,13 @@ module.exports = {
       // Component state initialization
     };
   }
+
+  render() {
+    return <div>{this.props.name}</div>;
+  }
+}
+
 ```
+
+-   `super(props)` allows the component to properly inherit from `React.Component` and ensures that the props are initialized correctly.
+-   If you omit `super(props)`, you won't be able to access `this.props` in your component.
