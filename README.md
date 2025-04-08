@@ -147,3 +147,33 @@ class MyComponent extends React.Component {
 
 -   `super(props)` allows the component to properly inherit from `React.Component` and ensures that the props are initialized correctly.
 -   If you omit `super(props)`, you won't be able to access `this.props` in your component.
+-   **First constructor is called than render method**
+
+# React Class Based Component Lifecycle
+
+-   First Construcor => Render => componentDidMount
+-   First Parent Construcor => Parent Render => (if Child => Child constructor => Child Render => ChildComponentDidMount ) => Parnet componentDidMount
+-   componentDidMount - is use for API Calls.
+
+```
+-   Parent constructor
+-   Parent render
+
+  -   First constructor
+  -   First render
+
+  -   Second constructor
+  -   Second render
+
+  -   First componentDidMount
+  -   Second componentDidMount
+
+-   Parent componentDidMount
+```
+
+-   Render phase -> Constructor -> Render
+-   Commit phase -> componentDidMount
+
+1. Constructor
+2. Render
+3. componentDidMount
