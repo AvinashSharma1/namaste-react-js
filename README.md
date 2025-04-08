@@ -171,9 +171,17 @@ class MyComponent extends React.Component {
 -   Parent componentDidMount
 ```
 
--   Render phase -> Constructor -> Render
--   Commit phase -> componentDidMount
+-   Render phase -> [Mounting -> Constructor -> Render]
+-   Commit phase -> [ Mounting -> componentDidMount]
+-   Render phase - > [Updating -> (new props | setState | forceUpdate) -> Render]
+-   Commit phase -> [Updating -> componentDidUpdate ]
+-   Render phase -> [Unmounting -> nothing]
+-   Commit phase -> [Unmounting -> componentWillUnmount]
 
 1. Constructor
 2. Render
 3. componentDidMount
+4. componentDidUpdate
+5. componentWillUnmount
+
+-
