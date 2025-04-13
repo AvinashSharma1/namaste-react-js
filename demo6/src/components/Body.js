@@ -3,6 +3,7 @@ import resList from '../utils/mockData'
 import { useEffect, useState } from 'react'
 import Shimmer from './Shimmer'
 import { Link } from 'react-router-dom'
+import useOnlineStatus from '../utils/useOnlineStatus'
 
 const Body = () => {
     // Local state variable to store the list of restaurants
@@ -29,6 +30,16 @@ const Body = () => {
         console.log(json)
         setListOfRestaurants(jsonData)
         setfilteredListOfRestaurants(jsonData)
+    }
+
+    // Custom hook to check online status
+    const onlineStatus = useOnlineStatus()
+    if (!onlineStatus) {
+        return (
+            <div className="offline-container">
+                <h1>Looks like you are offline</h1>
+            </div>
+        )
     }
 
     // Conditional rendering to show shimmer effect while data is being fetched

@@ -184,4 +184,39 @@ class MyComponent extends React.Component {
 4. componentDidUpdate
 5. componentWillUnmount
 
--
+# Terms of lazy loading
+
+-   Dynamic Bundlings
+-   chunking
+-   code spliting
+-   lazy loading
+-   on demand loading
+-   dynamic importing
+
+# Optimization and Performance
+
+-   custome hooks
+-   Lazy -
+-   Suspense - is component
+
+## Lazy Loading
+
+-   `const SomeComponent = lazy(load)`
+-   lazy(load) - Call `lazy` outside your components to declare a lazy-loaded React component:
+
+    ```
+    import { lazy } from 'react';
+    const MarkdownPreview = lazy(() => import('./MarkdownPreview.js'));
+
+    <Suspense fallback={<Loading />}>
+      <h2>Preview</h2>
+      <MarkdownPreview />
+    </Suspense>
+    ```
+
+    -   #### Parameters
+        -   `load`: A function that returns a `Promise` or another thenable (a Promise-like object with a `then` method). React will not call `load` until the first time you attempt to render the returned component. After React first calls `load`, it will wait for it to resolve, and then render the resolved value’s `.default` as a React component. Both the returned Promise and the Promise’s resolved value will be cached, so React will not call `load` more than once. If the Promise rejects, React will `throw` the rejection reason for the nearest Error Boundary to handle.
+    -   ### Returns
+        -   `lazy` returns a React component you can render in your tree. While the code for the lazy component is still loading, attempting to render it will suspend. Use `<Suspense>` to display a loading indicator while it’s loading.
+    -   load function
+        -   **Parameters** - load receives no parameters.
