@@ -1,4 +1,4 @@
-import RestuarentCard from './RestuarentCard'
+import RestaurantCard, { withOfferLabel } from './RestaurantCard'
 import resList from '../utils/mockData'
 import { useEffect, useState } from 'react'
 import Shimmer from './Shimmer'
@@ -14,6 +14,7 @@ const Body = () => {
         []
     )
     const [searchText, setSearchText] = useState('')
+    const RestaurantCardWithOffer = withOfferLabel(RestaurantCard)
 
     useEffect(() => {
         fetchData()
@@ -23,6 +24,10 @@ const Body = () => {
         const data = await fetch(
             'https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.594566&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING'
         )
+
+        if (!data.ok) {
+            throw new Error(`HTTP error! status: ${data.status}`)
+        }
         const json = await data.json()
         // opttional chaining to get the data from the json object
         const jsonData =
@@ -157,13 +162,40 @@ const Body = () => {
                 {filteredListOfRestaurants?.restaurants?.length > 0 ? (
                     filteredListOfRestaurants?.restaurants?.map(
                         (restaurant) => {
+                            const offerText = '125 off aboe 499'
+                            console.log(
+                                restaurant.info.aggregatedDiscountInfoV3
+                            )
+                            const { header, subHeader, discountTag } =
+                                restaurant?.info?.aggregatedDiscountInfoV3 || {}
+                            const discountText =
+                                discountTag === 'FLAT DEAL'
+                                    ? `${header || ''} ${
+                                          subHeader || ''
+                                      }`.trim()
+                                    : null
+                            console.log(discountText)
                             return (
-                                <Link
+                                <div
                                     key={restaurant.info.id}
-                                    to={`/restaurants/${restaurant.info.id}`}
+                                    className="restaurant-card relative"
                                 >
-                                    <RestuarentCard resData={restaurant} />
-                                </Link>
+                                    <Link
+                                        key={'link' + restaurant.info.id}
+                                        to={`/restaurants/${restaurant.info.id}`}
+                                    >
+                                        {discountText ? (
+                                            <RestaurantCardWithOffer
+                                                resData={restaurant}
+                                                offerText={discountText}
+                                            />
+                                        ) : (
+                                            <RestaurantCard
+                                                resData={restaurant}
+                                            />
+                                        )}
+                                    </Link>
+                                </div>
                             )
                         }
                     )
@@ -186,7 +218,7 @@ const Body = () => {
                                 key={'topbrand_' + restaurant.info.id}
                                 to={`/restaurants/${restaurant.info.id}`}
                             >
-                                <RestuarentCard resData={restaurant} />
+                                <RestaurantCard resData={restaurant} />
                             </Link>
                         )
                     })

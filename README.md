@@ -227,3 +227,7 @@ class MyComponent extends React.Component {
 -   SASS and SCSS design
 -   syled component
 -   Library framework - tailwindcss, Material UI, Bootstrap, chakara
+
+# Higher Order Component
+
+-   HOC fucntion is it takes component inside and return components
