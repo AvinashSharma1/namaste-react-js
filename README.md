@@ -220,3 +220,10 @@ class MyComponent extends React.Component {
         -   `lazy` returns a React component you can render in your tree. While the code for the lazy component is still loading, attempting to render it will suspend. Use `<Suspense>` to display a loading indicator while it’s loading.
     -   load function
         -   **Parameters** - load receives no parameters.
+
+## CSS Design
+
+-   Normal CSS
+-   SASS and SCSS design
+-   syled component
+-   Library framework - tailwindcss, Material UI, Bootstrap, chakara

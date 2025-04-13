@@ -9,6 +9,7 @@ const Body = () => {
     // Local state variable to store the list of restaurants
     // useState is a hook that allows you to add React state to function components
     const [listOfRestaurants, setListOfRestaurants] = useState([])
+    const [topBrandsListRestaurants, setTopBrandsListRestaurants] = useState([])
     const [filteredListOfRestaurants, setfilteredListOfRestaurants] = useState(
         []
     )
@@ -30,6 +31,12 @@ const Body = () => {
         console.log(json)
         setListOfRestaurants(jsonData)
         setfilteredListOfRestaurants(jsonData)
+
+        // setTopBrandsListRestaurants
+        const topBrandsList =
+            json?.data?.cards[1]?.card?.card?.gridElements.infoWithStyle
+        setTopBrandsListRestaurants(topBrandsList)
+        console.log(topBrandsList)
     }
 
     // Custom hook to check online status
@@ -50,21 +57,19 @@ const Body = () => {
 
     return (
         <div className="body">
-            <div className="search-container"></div>
-
-            <div className="filter-container">
+            <div className="search-container flex content-center justify-center m-2 p-2">
                 <div className="search">
                     <input
                         type="text"
                         placeholder="Search for restaurants"
-                        className="search-input"
+                        className="search-input h-11 w-96 px-4 mr-2 border border-solid border-gray-400 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                         value={searchText}
                         onChange={(e) => {
                             setSearchText(e.target.value)
                         }}
                     />
                     <button
-                        className="search-btn"
+                        className="search-btn px-4 h-11 bg-blue-500 blue-500 text-white rounded-lg border border-solid border-blue-500 "
                         onClick={() => {
                             let lowerCaseSearchText = searchText.toLowerCase()
                             let filteredList =
@@ -91,53 +96,64 @@ const Body = () => {
                     >
                         Search
                     </button>
-                </div>
-                <button
-                    className="filter-btn"
-                    onClick={() => {
-                        let filteredList = listOfRestaurants.restaurants.filter(
-                            (restaurant) => restaurant.info.avgRating >= 4.4
-                        )
-                        let filteredRestaurantsList = {
-                            restaurants: filteredList,
-                        }
-                        console.log(filteredRestaurantsList)
-                        setfilteredListOfRestaurants(filteredRestaurantsList)
-                    }}
-                >
-                    Top Rated Restaurants
-                </button>
 
-                <button
-                    className="filter-btn"
-                    onClick={() => {
-                        let filteredList = listOfRestaurants.restaurants.filter(
-                            (restaurant) =>
-                                restaurant.info.cuisines.includes(
-                                    'North Indian'
+                    <button
+                        className="filter-btn mx-2 px-2 h-11 bg-gray-400 text-white rounded-md border border-solid border-gray-400"
+                        onClick={() => {
+                            let filteredList =
+                                listOfRestaurants.restaurants.filter(
+                                    (restaurant) =>
+                                        restaurant.info.avgRating >= 4.4
                                 )
-                        )
-                        let filteredRestaurantsList = {
-                            restaurants: filteredList,
-                        }
-                        console.log(filteredRestaurantsList)
-                        setfilteredListOfRestaurants(filteredRestaurantsList)
-                    }}
-                >
-                    North Indian
-                </button>
-                <button
-                    className="filter-btn"
-                    onClick={() => {
-                        console.log('clear button')
-                        setfilteredListOfRestaurants(listOfRestaurants)
-                    }}
-                >
-                    Clear Filter
-                </button>
+                            let filteredRestaurantsList = {
+                                restaurants: filteredList,
+                            }
+                            console.log(filteredRestaurantsList)
+                            setfilteredListOfRestaurants(
+                                filteredRestaurantsList
+                            )
+                        }}
+                    >
+                        Top Rated Restaurants
+                    </button>
+                    <button
+                        className="filter-btn mx-2 px-2 h-11 bg-gray-400 text-white rounded-md border border-solid border-gray-400"
+                        onClick={() => {
+                            let filteredList =
+                                listOfRestaurants.restaurants.filter(
+                                    (restaurant) =>
+                                        restaurant.info.cuisines.includes(
+                                            'North Indian'
+                                        )
+                                )
+                            let filteredRestaurantsList = {
+                                restaurants: filteredList,
+                            }
+                            console.log(filteredRestaurantsList)
+                            setfilteredListOfRestaurants(
+                                filteredRestaurantsList
+                            )
+                        }}
+                    >
+                        North Indian
+                    </button>
+                    <button
+                        className="filter-btn mx-2 px-2 h-11 bg-gray-400 text-white rounded-md border border-solid border-gray-400"
+                        onClick={() => {
+                            console.log('clear button')
+                            setfilteredListOfRestaurants(listOfRestaurants)
+                        }}
+                    >
+                        Clear Filter
+                    </button>
+                </div>
             </div>
 
-            <div className="res-container">
+            <div className="flex justify-left m-8 px-4">
+                <h2 className="text-2xl font-bold ">Restaurants to explore</h2>
+            </div>
+
+            <div className="res-container flex m-8 flex-wrap">
                 {filteredListOfRestaurants?.restaurants?.length > 0 ? (
                     filteredListOfRestaurants?.restaurants?.map(
                         (restaurant) => {
@@ -153,6 +169,29 @@ const Body = () => {
                     )
                 ) : (
                     <h1>Oops no restaurants found !!</h1>
+                )}
+            </div>
+
+            <div className="flex justify-left m-8 px-4">
+                <h2 className="text-2xl font-bold ">
+                    Top restaurant chains in Bangalore
+                </h2>
+            </div>
+
+            <div className="top-brand-res-container flex m-8 flex-wrap">
+                {topBrandsListRestaurants?.restaurants?.length > 0 ? (
+                    topBrandsListRestaurants?.restaurants?.map((restaurant) => {
+                        return (
+                            <Link
+                                key={'topbrand_' + restaurant.info.id}
+                                to={`/restaurants/${restaurant.info.id}`}
+                            >
+                                <RestuarentCard resData={restaurant} />
+                            </Link>
+                        )
+                    })
+                ) : (
+                    <h1>Oops no top brand restaurants found !!</h1>
                 )}
             </div>
         </div>
