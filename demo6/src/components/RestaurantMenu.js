@@ -4,6 +4,7 @@ import Shimmer from './Shimmer'
 import { useParams } from 'react-router-dom'
 import { RES_MENU_API_URL } from '../utils/constants'
 import usesRestaurantMenu from '../utils/useRestaurantMenu'
+import RestaurantCategory from './RestaurantCategory'
 
 const RestaurantMenu = () => {
     const { resId } = useParams()
@@ -26,26 +27,38 @@ const RestaurantMenu = () => {
         resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
             ?.card || {}
     console.log(itemCards)
+
+    const categories =
+        resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+            (c) => {
+                return (
+                    c.card?.['card']?.['@type'] ===
+                    'type.googleapis.com/swiggy.presentation.food.v2.ItemCategory'
+                )
+            }
+        )
+    console.log('category', categories)
     return (
-        <div className="restaurant-menu">
-            <h1>{name}</h1>
-            <p>{cuisines.join(', ')}</p>
+        <div className="restaurant-menu text-center">
+            <h1 className="font-bold text-2xl">{name}</h1>
+            <p className="font-bold text-xl">{cuisines.join(', ')}</p>
             <p>{costForTwoMessage}</p>
             <p>{avgRating}</p>
             <p>{deliveryTime}</p>
             <p>{locality}</p>
-            <h2>Menu Items</h2>
-            <ul>
-                {itemCards?.map((item) => {
-                    return (
-                        <li key={item.card.info.id}>
-                            {item.card.info.name} - ₹
-                            {item?.card?.info?.defaultPrice / 100 ||
-                                item?.card?.info?.price / 100}
-                        </li>
-                    )
-                })}
-            </ul>
+
+            {/* Category accordion */}
+            {categories?.map((category) => (
+                <RestaurantCategory
+                    key={
+                        'category_card_' +
+                        category?.card?.card?.title +
+                        '_' +
+                        category?.card?.card?.type
+                    }
+                    data={category?.card?.card}
+                />
+            ))}
         </div>
     )
 }

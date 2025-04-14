@@ -231,3 +231,8 @@ class MyComponent extends React.Component {
 # Higher Order Component
 
 -   HOC fucntion is it takes component inside and return components
+
+# React Developer tools
+
+-   Components
+-   Profiler
