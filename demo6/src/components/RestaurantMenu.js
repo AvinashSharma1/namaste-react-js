@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React from 'react'
 import { useState, useEffect } from 'react'
 import Shimmer from './Shimmer'
 import { useParams } from 'react-router-dom'
@@ -7,7 +7,9 @@ import usesRestaurantMenu from '../utils/useRestaurantMenu'
 import RestaurantCategory from './RestaurantCategory'
 
 const RestaurantMenu = () => {
+    const [showIndex, setShowIndex] = useState(null)
     const { resId } = useParams()
+
     console.log(resId)
     const resInfo = usesRestaurantMenu(resId)
 
@@ -48,15 +50,17 @@ const RestaurantMenu = () => {
             <p>{locality}</p>
 
             {/* Category accordion */}
-            {categories?.map((category) => (
+            {categories?.map((category, index) => (
                 <RestaurantCategory
                     key={
                         'category_card_' +
                         category?.card?.card?.title +
                         '_' +
-                        category?.card?.card?.type
+                        category?.card?.card?.categoryId
                     }
                     data={category?.card?.card}
+                    showItems={index === showIndex ? true : false}
+                    setShowIndex={() => setShowIndex(index)}
                 />
             ))}
         </div>

@@ -105,6 +105,7 @@ module.exports = {
     -   If dependacny array is [stateVaribaleName] => It's only called everytime stateVariable is updated
 -   useParams
     use for get resId (path)
+-   ## useContext()
 
 ## Reconciliation Algorithm-> React Fiber
 
@@ -235,4 +236,41 @@ class MyComponent extends React.Component {
 # React Developer tools
 
 -   Components
--   Profiler
+-   Profiler - Profiling Components with the DevTools Profiler
+
+# Controll component & Uncontroll component
+
+# Sharing State Between Components
+
+-   Lifting state
+
+# prop drilling
+
+# react context
+
+-   global data can access anywhere in the component
+-   so keep data in centeral palce
+-   createContext
+-   useContext - hooks
+-   in Class based components
+    ```<UserContext.Consumer>
+        {(data) => console.log(data)}
+      </UserContext.Consumer>
+    ```
+    ```
+    {/*Default will take default username*/}
+    <UserContext.Provider value={{ loggedInuser: "anonymous" }}>
+      <div className="App">
+         {/*App component will take anonymous username*/}
+        <UserContext.Provider value={{ loggedInuser: "anonymous2" }}>
+         {/*App component will take anonymous2 username*/}
+            <Header />
+        </UserContext.Provider>
+        <Body />
+      </div>
+    </UserContext.Provider>
+    ```
+
+## Context
+
+-   userContextProvider
