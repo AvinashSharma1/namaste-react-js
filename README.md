@@ -274,3 +274,39 @@ class MyComponent extends React.Component {
 ## Context
 
 -   userContextProvider
+
+## Redux
+
+-   Redux
+-   React-redux
+-   Redux took kit RTK
+
+-   Slice
+-   Dispatch
+-   Action
+-   Reducer
+
+for write data
+click to add to cart button -> Dispatch (action ) -> reducer -> update slice of redux store
+
+for read data
+
+-   Selector
+-   subscribing
+
+Selector -> read data from slice using subscribe component using useSelector() hooks
+
+-   Install @reduxjs/toolkit and react-redux
+-   Build our store
+-   Connect our store our app
+-   create slicke (carSlice)
+-   dispatch(action)
+-   Selector
+
+# Provider
+
+# useSelector
+
+# useDispatch
+
+## immer

@@ -1,13 +1,27 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { RES_CDN_URL } from '../utils/constants'
+import { addItem } from '../utils/cartSlice'
 
-const ItemList = ({ items }) => {
+const ItemList = ({ items, type }) => {
     console.log('items', items)
+
+    const dispatch = useDispatch()
+
+    const handleAddToCartItem = (item) => {
+        console.log('Add to cart clicked')
+        // let attr_item_name = e.target.getAttribute('attr_item_name')
+        console.log('Item name:', item)
+        dispatch(addItem(item))
+    }
+
+    const typeOfItem = type === 'cart' ? 'cart' : 'menu'
+
     return (
         <div className="">
             {items?.map((item) => (
                 <div
-                    key={item.card.info.id}
+                    key={typeOfItem + '_' + item.card.info.id}
                     className="p-2 m-2 flex justify-between border-b-2 border-gray-300 text-left"
                 >
                     <div className="w-9/12">
@@ -39,7 +53,11 @@ const ItemList = ({ items }) => {
                     </div>
                     <div className="w-3/12 p-4">
                         <div className="absolute">
-                            <button className="p-2 bg-opacity-5 hover:bg-white  mx-16 bottom-1 bg-gray-50 shadow-lg">
+                            <button
+                                attr_item_name={item.card.info.name}
+                                className="p-2 bg-opacity-5 hover:bg-white  mx-16 bottom-1 bg-gray-50 shadow-lg"
+                                onClick={() => handleAddToCartItem(item)}
+                            >
                                 Add +
                             </button>
                         </div>

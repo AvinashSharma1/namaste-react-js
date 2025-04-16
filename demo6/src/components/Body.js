@@ -15,6 +15,7 @@ const Body = () => {
         []
     )
     const [searchText, setSearchText] = useState('')
+    const { loggedInUser, setUserName } = useContext(UserContext)
     const RestaurantCardWithOffer = withOfferLabel(RestaurantCard)
 
     useEffect(() => {
@@ -60,8 +61,6 @@ const Body = () => {
     if (listOfRestaurants?.length === 0) {
         return <Shimmer />
     }
-
-    const { loggedInUser, setUserName } = useContext(UserContext)
 
     return (
         <div className="body">

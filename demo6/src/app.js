@@ -8,6 +8,9 @@ import RestaurantMenu from './components/RestaurantMenu'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import RestaurantMenu from './components/RestaurantMenu'
 import UserContext from './utils/userContext'
+import { Provider } from 'react-redux'
+import appStore from './utils/AppStore'
+import Cart from './components/Cart'
 
 const About = lazy(() => import('./components/About'))
 const Contact = lazy(() => import('./components/Contact'))
@@ -25,17 +28,21 @@ const AppLayout = () => {
     }, [])
 
     return (
-        <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-            <div className="app">
-                {console.log('App Layout is calling...')}
-                <Header />
-                <Outlet />
-                {/* This is where the child components will be rendered */}
-                {/* <Body /> */}
-                {/* <About /> */}
-                {/* <Contact /> */}
-            </div>
-        </UserContext.Provider>
+        <Provider store={appStore}>
+            <UserContext.Provider
+                value={{ loggedInUser: userName, setUserName }}
+            >
+                <div className="app">
+                    {console.log('App Layout is calling...')}
+                    <Header />
+                    <Outlet />
+                    {/* This is where the child components will be rendered */}
+                    {/* <Body /> */}
+                    {/* <About /> */}
+                    {/* <Contact /> */}
+                </div>
+            </UserContext.Provider>
+        </Provider>
     )
 }
 const appRouter = createBrowserRouter([
@@ -58,6 +65,10 @@ const appRouter = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact />,
+            },
+            {
+                path: '/cart',
+                element: <Cart />,
             },
             {
                 path: '/restaurants/:resId',

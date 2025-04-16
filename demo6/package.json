@@ -18,9 +18,11 @@
     },
     "homepage": "https://github.com/AvinashSharma1/namaste-react-js#readme",
     "dependencies": {
+        "@reduxjs/toolkit": "^2.6.1",
         "parcel": "^2.14.2",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
+        "react-redux": "^9.2.0",
         "react-router-dom": "^6.30.0"
     },
     "devDependencies": {
