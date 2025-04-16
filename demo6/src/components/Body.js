@@ -1,9 +1,10 @@
 import RestaurantCard, { withOfferLabel } from './RestaurantCard'
 import resList from '../utils/mockData'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import Shimmer from './Shimmer'
 import { Link } from 'react-router-dom'
 import useOnlineStatus from '../utils/useOnlineStatus'
+import UserContext from '../utils/userContext'
 
 const Body = () => {
     // Local state variable to store the list of restaurants
@@ -59,6 +60,8 @@ const Body = () => {
     if (listOfRestaurants?.length === 0) {
         return <Shimmer />
     }
+
+    const { loggedInUser, setUserName } = useContext(UserContext)
 
     return (
         <div className="body">
@@ -151,6 +154,17 @@ const Body = () => {
                     >
                         Clear Filter
                     </button>
+                    <div>
+                        <label>Username:</label>
+                        <input
+                            value={loggedInUser}
+                            className="m-2 px-2"
+                            type="text"
+                            onChange={(e) => {
+                                setUserName(e.target.value)
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
 

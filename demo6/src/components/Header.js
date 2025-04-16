@@ -1,6 +1,8 @@
 import { IMAGE_LOGO_URL } from '../utils/constants'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import User from './User'
+import UserContext from '../utils/userContext'
 const Header = () => {
     const [reactAuthBtn, setReactAuthBtn] = useState('Login')
     return (
@@ -35,6 +37,13 @@ const Header = () => {
                     >
                         {reactAuthBtn}
                     </button>
+                    <li className="px-2">
+                        <UserContext.Consumer>
+                            {(context) => {
+                                return context.loggedInUser
+                            }}
+                        </UserContext.Consumer>
+                    </li>
                 </ul>
             </nav>
         </div>
