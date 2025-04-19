@@ -333,7 +333,10 @@ Selector -> read data from slice using subscribe component using useSelector() h
 -   Configure Babel
 -   Configure parcel config file to disable default babel transpilation
 -   Jest configure
--   Install jsdom - If you're using Jest 28 or later, jest-environment-jsdom package now must be installed separately.
+-   Install jsdom - If you're using Jest 28 or later, jest-environment-jsdom package now must be installed separately. npm install --save-dev jest-environment-jsdom
+-   Install - npm install -D @babel/preset-react - to make JSX work in test cases
+-   Include @babel/preset-react inside babel configuration
+-   Install @testing-library/jest-dom
 
 ```
 npm install --save-dev @testing-library/react @testing-library/dom
@@ -345,8 +348,11 @@ Configure Babel - babel.config.js
 
 ```
 module.exports = {
-  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
-};
+    presets: [
+        ['@babel/preset-env', { targets: { node: 'current' } }],
+        ['@babel/preset-react', { runtime: 'automatic' }],
+    ],
+}
 ```
 
 -   parcel configure - .parcelrc
@@ -365,3 +371,24 @@ module.exports = {
 
     -   npx jest --init
     -   npm install --save-dev jest-environment-jsdom
+    -   npm i -D @babel/preset-react
+    -   npm i -D @testing-library/jest-dom
+    -   render and screen laod from @testing-library/react
+
+    # Test case run
+
+    -   npx jest --clearCache
+    -   npx jest --config=jest.config.js --no-cache
+    -   npm run test
+
+### Key Terminology Used
+
+-   **describe**: Groups related test cases for better organization.
+-   **test / it**: Defines individual test cases.
+-   **render**: Renders the React component into a virtual DOM for testing.
+-   **screen**: Provides access to queries for selecting elements.
+-   **getByRole / getAllByRole**: Selects elements by their ARIA role (e.g., 'heading', 'textbox', 'button').
+-   **expect**: Used for assertions in Jest.
+-   **toBeInTheDocument**: Checks if an element exists in the DOM.
+-   **toHaveTextContent**: Checks if an element contains specific text.
+-   **toHaveLength**: Checks the number of elements in an array (e.g., number of textboxes).
