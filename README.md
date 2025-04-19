@@ -309,4 +309,59 @@ Selector -> read data from slice using subscribe component using useSelector() h
 
 # useDispatch
 
+### Redux DevTools
+
 ## immer
+
+# types of testing ()
+
+-   Unit testing
+-   Integration testing
+-   End to end E2E testing
+
+### Test Library
+
+-   React Testing Library
+-   React testing Library is on top od DOM Testing Library
+-
+
+## Setting up testing in our app
+
+-   Install React Testing Library
+-   Install Jest
+-   Intall Babel dependencies
+-   Configure Babel
+-   Configure parcel config file to disable default babel transpilation
+-   Jest configure
+-   Install jsdom - If you're using Jest 28 or later, jest-environment-jsdom package now must be installed separately.
+
+```
+npm install --save-dev @testing-library/react @testing-library/dom
+npm install --save-dev jest
+npm install --save-dev babel-jest @babel/core @babel/preset-env
+```
+
+Configure Babel - babel.config.js
+
+```
+module.exports = {
+  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+};
+```
+
+-   parcel configure - .parcelrc
+
+    ```
+    {
+    "extends": "@parcel/config-default",
+    "transformers": {
+      "*.{js,mjs,jsx,cjs,ts,tsx}": [
+        "@parcel/transformer-js",
+        "@parcel/transformer-react-refresh-wrap"
+      ]
+    }
+    }
+    ```
+
+    -   npx jest --init
+    -   npm install --save-dev jest-environment-jsdom

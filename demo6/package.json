@@ -1,32 +1,38 @@
 {
-    "name": "namaste-food-app",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {
-        "start": "parcel index.html",
-        "build": "parcel build index.html",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/AvinashSharma1/namaste-react-js.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/AvinashSharma1/namaste-react-js/issues"
-    },
-    "homepage": "https://github.com/AvinashSharma1/namaste-react-js#readme",
-    "dependencies": {
-        "@reduxjs/toolkit": "^2.6.1",
-        "parcel": "^2.14.2",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "react-redux": "^9.2.0",
-        "react-router-dom": "^6.30.0"
-    },
-    "devDependencies": {
-        "postcss": "^8.5.3",
-        "tailwindcss": "^3.4.17"
-    }
+  "name": "namaste-food-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvinashSharma1/namaste-react-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AvinashSharma1/namaste-react-js/issues"
+  },
+  "homepage": "https://github.com/AvinashSharma1/namaste-react-js#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "parcel": "^2.14.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.30.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.3.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
+  }
 }
